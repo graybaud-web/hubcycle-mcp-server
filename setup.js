@@ -150,7 +150,7 @@ function saveHubcycleConfig(apiKey) {
     fs.mkdirSync(HUBCYCLE_CONFIG_DIR, { recursive: true });
   }
   writeJsonFile(HUBCYCLE_CONFIG_FILE, {
-    apiKey,
+    api_key: apiKey,
     apiUrl: API_URL,
   });
 }
